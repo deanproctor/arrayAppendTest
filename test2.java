@@ -13,7 +13,7 @@ public class test2 {
         Observable
                 .just(1)
                 .flatMap(s ->
-                        Observable.range(0, 1000)
+                        Observable.range(0, 2000)
                                 .flatMap(new Func1<Integer, Observable<?>>() {
                                         @Override
                                         public Observable<?> call(Integer i) {
