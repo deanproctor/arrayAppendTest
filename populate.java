@@ -14,7 +14,7 @@ public class populate {
     	Bucket bucket = cluster.openBucket("test");
 
         Observable
-                .range(0,1)
+                .range(0,2)
                 .flatMap(new Func1<Integer, Observable<?>>() {
             				@Override
             				public Observable<?> call(Integer i) {
